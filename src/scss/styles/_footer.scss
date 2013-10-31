@@ -1,0 +1,57 @@
+.ccp-pre-footer {
+
+}
+
+// containing contact form
+.ccp-sub-footer {
+
+
+	@at-root {
+		#{&}-container {
+
+			.widget-footer {
+			@at-root {
+
+				#{&}-about {
+				}
+
+				#{&}-contact {
+
+				}// footer contact
+
+			}//@root
+			} // widget-footer
+
+
+		}// sub footer container
+
+	} // @root
+}// sub footer
+
+
+.ccp-footer {
+	@at-root {
+
+		#{&}-container {
+		}
+
+		#{&}-menu {
+
+			li {
+				a {
+
+				}
+			}// li
+		}// menu
+
+		#{&}-menu2 {
+
+			li {
+				a {
+
+				}
+			}// li
+		}// menu2
+
+	}//@root
+}//ccp-footer

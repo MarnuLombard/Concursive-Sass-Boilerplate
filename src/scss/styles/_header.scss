@@ -1,0 +1,80 @@
+/*
+--------------------------------
+	Structure of the header is:
+--------------------------------
+<div class="ccp-header">
+  <div class="ccp-header-menu">
+    <div class="ccp-user-menu">
+      <ul>
+				<li>
+          <a>
+
+  <div class="ccp-search-form">
+    <form>
+      <div id="applesearch">
+      <input type="submit" id="ccp-search-go">
+
+  <div class="ccp-navigation">
+    <ul>
+      <li id="ccp-tabitem-*PageName">
+				<a id="ccp-tab-*PageName">
+
+  <div class="ccp-header-title">
+    <a id="ccp-header-title-link-id">
+			<img id="ccp-header-title-image-id" src="img/logo.png">
+
+*/
+.ccp-header {
+@at-root {
+
+	#ccp-body-home & {
+		color: blue
+	}
+
+	#{&}-menu {
+		a {
+
+		}
+	} // -menu
+
+}// @root
+
+	.ccp-header-menu {
+		.ccp-user-menu {
+
+		}
+	}// header menu
+
+	.ccp-search-form {
+		#applesearch {
+
+		}
+		#ccp-search-go {
+
+		}
+	}// search form
+
+
+	.ccp-navigation {
+		ul {
+			li[class~="ccp-tabitem-"] {
+				a[class~="ccp-tab-"] {
+
+				}// a
+			}// li
+		}// ul
+	}// navigation
+
+	// this is the logo
+	.ccp-header-title {
+		#ccp-header-title-link-id {
+			#ccp-header-title-image-id {
+
+			}
+		}
+	}// ccp-header-title
+
+
+
+} //ccp-header
+

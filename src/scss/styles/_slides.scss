@@ -1,0 +1,53 @@
+.ccp-slide {
+	h2 {
+
+	}
+	a {
+
+	}
+	ul {
+		li {
+
+		}
+	}// ul
+}// slide
+
+
+
+// the slider's closest wrapper
+.yui-carousel{
+	@at-root {
+
+		#{&}-element
+
+		} // carousel element
+
+		//a slide itself
+		#{&}-item {
+
+		}
+
+		#{&}-nav {
+		}// yui-carousel-nav
+
+		#{&}-button {
+
+		}
+
+		#{&}-next-button {
+
+		}
+
+		#{&}-first-button {
+
+		}
+
+		// the dots
+		#{&}-nav-first-page {
+
+		}
+
+		#{&}-nav-first-page {
+
+	}// @root
+}// yui-carousel

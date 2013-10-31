@@ -1,0 +1,18 @@
+.ccp-page-body {
+	.ccp-container {
+		_height: 1%;
+		width: 100%;
+
+		.ccp-body {
+			table.portletContainer {
+
+			}
+		}// body
+	}
+}
+
+
+.clear,
+.widget-footer-contact:after{
+	@extend %clearfix
+}

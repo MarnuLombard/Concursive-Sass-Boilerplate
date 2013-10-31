@@ -5,3 +5,4 @@ delete
 node_modules
 *.project-workspace
 *.sublime-workspace
+*.sublime-project

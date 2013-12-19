@@ -8,13 +8,36 @@ module.exports = function(grunt) {
 
     // watch for changes and trigger sass, concat, uglify and livereload
     watch: {
+      icons: {
+        files: ['icons/*.svg'],
+        tasks: ['webfont']
+      },
       sass: {
         files: ['scss/**/*', 'scss/*'],
         tasks: ['sass']
       },
       livereload: {
-        options: { livereload: true },
-        files: ['../dist/*', '../dist/**/*', '../dist/***/**/*']
+        options: {
+          livereload: true
+        },
+        files: [
+          '../dist/*.html',
+          '../dist/css/*',
+          '../dist/fonts/*'
+        ]
+      }
+    },
+
+    // To generate the icon fonts from the files in my ./src/icons/ directory
+    webfont: {
+      icons: {
+        src: "icons/*.svg",
+        dest: "../dist/fonts",
+        options: {
+          hashes: false,
+          htmlDemo: false,
+          stylesheet: false
+        }
       }
     },
 
